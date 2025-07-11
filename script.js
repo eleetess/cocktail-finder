@@ -26,14 +26,15 @@ function renderCockTails(cocktailData) {
 //added style for container
   cocktailData.forEach((cocktail) => {
     const drinkElm = document.createElement("div");
-    drinkElm.className = "flex flex-wrap flex-col justify-center columns-4 gap-4 bg-gradient-to-br from-slate-950 to-teal-950 text-slate-400 rounded-xl text-white p-4 m-2 w-1/3";
+    drinkElm.className = "flex flex-wrap flex-row justify-center columns-4 gap-4 bg-gradient-to-br from-slate-950 to-teal-950 text-slate-400 rounded-xl text-white p-4 m-2 w-1/3";
 
     drinkElm.innerHTML = `
       <h2 class="text-xl font-bold text-lime-500 mb-2">${cocktail.strDrink}</h2>
       <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" class="rounded shadow mb-2 w-full justify-content-center">
       <p class=" flex flex-wrap flex-col gap-4">${cocktail.strInstructions}</p>
+      
     `;
-
+     
     drinkContainer.appendChild(drinkElm);
   });
   const cocktailName = document.getElementById("drinkName").value 
