@@ -23,10 +23,10 @@ function renderCockTails(cocktailData) {
     drinkContainer.innerHTML = "<p>No cocktails found.</p>";
     return;
   }
-//added style for container
+//added style for container add px to cards line 29
   cocktailData.forEach((cocktail) => {
     const drinkElm = document.createElement("div");
-    drinkElm.className = "flex flex-wrap flex-row justify-center columns-4 gap-4 bg-gradient-to-br from-slate-950 to-teal-950 text-slate-400 rounded-xl text-white p-4 m-2 w-1/3";
+    drinkElm.className = "flex flex-wrap flex-row justify-center columns-4 gap-4 bg-gradient-to-br from-slate-950 to-teal-950 text-slate-400 rounded-xl text-white p-4 m-2 w-10px";
 
     drinkElm.innerHTML = `
       <h2 class="text-xl font-bold text-lime-500 mb-2">${cocktail.strDrink}</h2>

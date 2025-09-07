@@ -6,12 +6,15 @@
     <title>CapstoneAPI</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
-<style>
-  h1 {
-    font-family: 'Bungee Spice', sans-serif;
-  }
-</style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        font-family: "Bungee Spice", sans-serif;
+      }
+    </style>
   </head>
   <body
     class="relative z-10 flex flex-col gap-4 min-h-screen text-center px-4 items-center justify-center bg-gradient-to-br from-slate-950 to-rose-950 text-slate-400"
@@ -21,23 +24,27 @@
         Pour Decisions
       </h1>
     </header>
-    <nav>
-      <div class="logo">🍸 CocktailMix</div>
-    <ul class="nav-links text-lime-500">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Cocktails</a></li>
-      <li><a href="#">Ingredients</a></li>
-      <li><a href="#">Random</a></li>
-      <li><a href="#">Favorites</a></li>
-    </ul>
-  </nav>
+    <nav class="bg-gray-800 items-center justify-between">
+      <div class="logo">🍸</div>
+      <ul
+        class="nav-links mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 text-lime-500"
+      >
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cocktails</a></li>
+        <li><a href="#">Ingredients</a></li>
+        <li><a href="#">Random</a></li>
+        <li><a href="#">Favorites</a></li>
+      </ul>
+    </nav>
     <main class="w-[90 vw] mx-auto">
       <section id="feature" class="">
         <div
           id="container"
           class="w-1060px h-500px bg-[url('https://img.freepik.com/premium-photo/three-colorful-glasses-with-different-beverages-great-party-social-media-post_153912-346293.jpg?semt=ais_hybrid&w=740')] bg-cover bg-center"
         >
-          <div class="text-3xl px-4 text-center max-w-3xl mx-auto  text-blue-500 font-bold">
+          <div
+            class="text-3xl px-4 text-center max-w-3xl mx-auto text-blue-500 font-bold"
+          >
             <p>
               🍸 Welcome to Pour Decisions Where every sip is a smart move.
               Ready to discover your next favorite cocktail? Search by name or
@@ -67,16 +74,16 @@
         </form>
       </section>
       <section id="favorites">
-  <h3>My Favorites</h3>
-  <ul id="favoritesList"></ul>
-</section>
+        <h3>My Favorites</h3>
+        <ul id="favoritesList"></ul>
+      </section>
       <div id="searchresults"></div>
       <section
         id="drink-container"
-        class="flex flex-wrap  grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4   justify-content-center my-2 w-full items-center"
+        class="flex flex-wrap gap-4 justify-content-center my-2 w-full items-center"
       ></section>
     </main>
-    <footer></footer>
+    <footer>&copy; Whiskey_T93 All Rights Reserved.</footer>
     <script src="script.js"></script>
   </body>
 </html>
